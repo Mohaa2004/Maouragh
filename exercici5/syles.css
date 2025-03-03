@@ -1,0 +1,46 @@
+.navbar{
+    padding: 20px;
+    background-color: rgb(85, 81, 81);
+}
+
+.navbar-collapse {
+    align-items:center;
+    justify-content: space-between;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar-brand {
+      display: none;
+    }    
+  }
+  
+  .hero{
+    background-color: #f5f6f7;  
+    min-height: 400; 
+    text-align: center; 
+}
+
+section {
+    display:flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;  
+  }
+  
+  h1{
+    font-size: 4.5vw; 
+}
+
+.hero-imatge-developer{
+    width:200px;
+    height:200px;
+    margin:20px;
+}
+
+.hero h2{
+    font-size: 2.3vw; /*mida de la font relativa a la pantalla*/
+    color: #615151; /*color del text*/
+}
+
+
+

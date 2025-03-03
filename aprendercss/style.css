@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: sans-serif;
+    background-color: aqua;
+}
+
+.navbar{
+    background-color: rgb(255, 255, 255);
+    padding: 21px 30px;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li{
+    margin: 0 20px;
+}
+
+#ebro{
+   margin-right: auto;
+}
+.menu a{
+    text-decoration: none;
+    color: rgb(41, 38, 38);
+    font-size: 17px;
+ 
+}
+
+.menu a:hover {
+    color: rgb(7, 192, 205); 
+}

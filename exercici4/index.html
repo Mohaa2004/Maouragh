@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sant Pere de Vallhonesta</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Sant Pere de Vallhonesta</h1>
+      <nav>
+        <ul>
+          <li><a href="#historia">Història</a></li>
+          <li><a href="#ubicacio">Ubicació</a></li>
+          <li><a href="#video">Vídeo 360°</a></li>
+          <li><a href="#visites">Visites Guiades</a></li>
+          <li><a href="#contacte">Contacte</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="historia">
+      <h2>Història</h2>
+      <p>
+        Sant Pere de Vallhonesta és una església romànica situada a la localitat
+        de Sant Vicenç de Castellet, a la comarca del Bages. Aquesta església,
+        d'origen medieval, és un exemple destacat de l'arquitectura religiosa
+        del segle XII. La seva estructura simple i robusta reflecteix l'estil
+        romànic típic de l'època, amb arcs de mig punt i parets gruixudes.
+      </p>
+      <p>
+        Durant segles, l'església ha estat un punt de referència per als
+        habitants de la zona, i avui en dia és un lloc d'interès històric i
+        cultural. La seva ubicació en un entorn natural afegix un valor
+        addicional al conjunt, oferint als visitants una experiència única.
+      </p>
+      <h3>Característiques Arquitectòniques</h3>
+      <p>
+        L'església compta amb una nau única, un absis semicircular i una porta
+        d'entrada amb arquivoltes decorades. Els murs són de pedra local, i el
+        conjunt està envoltat d'un paisatge natural que enriqueix la seva bellesa.
+      </p>
+    </section>
+
+    <section id="video">
+      <h2>Vídeo 360°</h2>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/0fozzxFXRac"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <section id="ubicacio">
+      <h2>Ubicació</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2975.8729600362525!2d1.8852362!3d41.6738485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4f699b30b51d3%3A0x58314229b7e08d73!2sErmita%20de%20San%20Pedro%20de%20Vallhonesta!5e0!3m2!1ses!2ses!4v1677835200000!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <div class="doble-columna">
+      <section id="visites">
+        <h2>Visites Guiades</h2>
+        <p>
+            Visita lliure i sense restriccions: Descobreix Sant Pere de Vallhonesta
+            al teu propi ritme, sense horaris ni reserves. 
+        </p>
+        
+        <h3>Accés</h3>
+        <ul>
+            <li>Obert permanentment</li>
+            <li>Accés gratuït</li>
+            <li>Visita autoguiada amb panells informatius</li>
+        </ul>
+    
+        <p>
+            Consulta els nostres plafons explicatius distribuïts per l'espai
+            per a una millor comprensió del conjunt històric.
+        </p>
+    </section>
+    
+
+      <section id="contacte">
+        <h2>Contacte</h2>
+        <p>
+          Si tens alguna pregunta o vols més informació, no dubtis a posar-te en
+          contacte amb nosaltres.
+        </p>
+        <form action="submit_form.php" method="post">
+          <label for="nom">Nom:</label>
+          <input type="text" id="nom" name="nom" required />
+
+          <label for="email">Correu electrònic:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="missatge">Missatge:</label>
+          <textarea id="missatge" name="missatge" rows="5" required></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2023 Sant Pere de Vallhonesta.</p>
+    </footer>
+  </body>
+</html>

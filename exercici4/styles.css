@@ -1,0 +1,72 @@
+body {
+    font-family: Arial;
+    line-height: 1.6;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+section, .doble-columna {
+    border-radius: 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 1rem 0 0;
+    list-style: none; 
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+section, .doble-columna {
+    background: white;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    width: 90%;
+}
+
+iframe {
+    width: 100%;
+    height: 25rem;
+}
+
+form { display: grid; gap: 1rem; }
+
+input, textarea, button {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+}
+
+button {
+    background: #1abc9c;
+    color: white;
+    border: 0;
+}
+
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    display: flex;       
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;     
+}
+
+.doble-columna {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
