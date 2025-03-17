@@ -1,72 +1,125 @@
 body {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
-    background: #f4f4f4;
+    background: #72d654;
+  
 }
 
 header {
-    background: #2c3e50;
-    color: white;
-    padding: 2rem 0;
+    background: url("bannerNaturaleza.jpg");
+    color: #000;
+    padding: 2rem;
     text-align: center;
-}
-
-section, .doble-columna {
-    border-radius: 15px;
 }
 
 nav ul {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1rem;
     padding: 0;
     margin: 1rem 0 0;
-    list-style: none; 
+    list-style: none;
 }
 
 nav a {
-    color: white;
+    color: #000;
     text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: color 0.3s;
 }
 
-section, .doble-columna {
-    background: white;
+nav a:hover {
+    color: #1abc9c;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+section {
+    background: #fff;
     margin: 1.5rem auto;
     padding: 1.5rem;
     width: 90%;
+    max-width: 1200px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+#video iframe {
+    height: 400px; 
+    width: 70%; 
+    margin: 0 auto; 
+    display: block;
+    border-radius: 15px; 
+}
+
+.text-columns {
+    column-count: 2;
+    column-gap: 2rem;
+}
+
+.imatges-historia, .captures {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.imatges-historia img, .captures img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.galeria-360 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.imatge-container {
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 iframe {
     width: 100%;
-    height: 25rem;
-}
-
-form { display: grid; gap: 1rem; }
-
-input, textarea, button {
-    padding: 0.8rem;
-    border: 1px solid #ddd;
-}
-
-button {
-    background: #1abc9c;
-    color: white;
-    border: 0;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
 }
 
 footer {
-    background: #2c3e50;
-    color: white;
+    background: #443721;
+    color: #fff;
     padding: 1rem;
-    display: flex;       
-    justify-content: center;
-    align-items: center;
-    min-height: 60px;     
+    text-align: center;
+    margin-top: 2rem;
 }
 
-.doble-columna {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
 }
+
+footer a:hover {
+    color: #1bcd3c;
+}
+
+@media (max-width: 575.98px) {
+    .text-columns {
+        column-count: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    #video iframe {
+        height: 300px; 
+        width: 95%;
+    }
+}
+
